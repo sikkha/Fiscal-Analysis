@@ -1,0 +1,181 @@
+
+
+% !TEX program = XeLaTeX
+% !TEX encoding = UTF-8
+%%\documentclass[UTF8,nofonts]{ctexart} 
+%\documentclass{memoir}
+\documentclass[openany]{memoir}
+\counterwithout{footnote}{chapter}
+
+%\documentclass{article}
+%%\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+%%\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+%%setCJKmonofont{STFangsong}
+
+
+%usepackage section
+
+%%\usepackage{pinyin}
+%%%\usepackage{lipsum}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{color}
+\usepackage{graphicx} %image
+\usepackage{float} % float positions
+\usepackage{abstract}
+\usepackage{textgreek}
+\usepackage{tcolorbox}
+\usepackage{textcomp}
+
+\usepackage{indentfirst}
+\usepackage{soul}
+
+\usepackage{enumitem, amsmath}
+
+\usepackage[hyphens]{url}
+%\usepackage{xurl}
+
+\usepackage{apacite}
+%\usepackage[sectionbib,square]{natbib}
+\usepackage{natbib}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.multipart}
+
+
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
+
+%%%\usepackage[english, greek]{babel}
+\usepackage[LGR,T1]{fontenc}
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
+
+
+%landscape setup
+%\usepackage{lscape}
+\usepackage{pdflscape}
+
+
+% add dot
+
+% Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} %clear fancyhead
+\fancyfoot{}
+\fancyfoot[R] { \thepage\ }
+\renewcommand{\headrulewidth}{1pt} %set header and footer margin
+\renewcommand{\footrulewidth}{1pt}
+
+\fancyfoot[C]{DA8110: Quantitative Research I}
+
+
+
+
+% epigraphsetting
+\epigraphfontsize{\small\itshape}
+
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+
+\makeglossaries
+
+\chapterstyle{article}
+
+
+\begin{document}
+
+\begin{landscape}
+\thispagestyle{plain}
+
+
+
+
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, May 12, 2021 - 12:10:01
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{GEDU} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+ GDP & 24.581 &  &  &  &  &  \\ 
+  &  &  &  &  &  &  \\ 
+  & & & & & & \\ 
+ POP & $-$22.252 & $-$0.407 &  &  &  &  \\ 
+  &  & (0.260) &  &  &  &  \\ 
+  & & & & & & \\ 
+ URB & $-$1.461 & 0.100$^{**}$ &  &  &  &  \\ 
+  &  & (0.039) &  &  &  &  \\ 
+  & & & & & & \\ 
+ INEQTY &  &  &  & 0.645$^{***}$ &  &  \\ 
+  &  &  &  & (0.130) &  &  \\ 
+  & & & & & & \\ 
+ REV &  & 0.830$^{***}$ &  &  &  &  \\ 
+  &  & (0.132) &  &  &  &  \\ 
+  & & & & & & \\ 
+ TRADE &  &  &  &  & $-$0.013 &  \\ 
+  &  &  &  &  & (0.011) &  \\ 
+  & & & & & & \\ 
+ LABOR &  &  &  &  & 1.004$^{***}$ &  \\ 
+  &  &  &  &  & (0.030) &  \\ 
+  & & & & & & \\ 
+ DGOV &  &  &  & $-$0.0002 &  &  \\ 
+  &  &  &  & (0.538) &  &  \\ 
+  & & & & & & \\ 
+ GEDUtm1 &  &  &  &  &  & 0.961$^{***}$ \\ 
+  &  &  &  &  &  & (0.062) \\ 
+  & & & & & & \\ 
+ Constant & $-$78.183 & $-$4.477$^{*}$ & 9.600 & 3.409$^{***}$ & $-$3.948$^{***}$ & 0.427 \\ 
+  &  & (2.279) &  & (0.790) & (0.396) & (0.517) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 26 & 26 & 26 & 26 & 26 & 26 \\ 
+R$^{2}$ & 1.000 & 0.915 & 1.000 & 0.692 & 0.983 & 0.910 \\ 
+Adjusted R$^{2}$ &  & 0.903 &  & 0.666 & 0.982 & 0.906 \\ 
+Residual Std. Error &  & 0.469 (df = 22) &  & 0.872 (df = 23) & 0.203 (df = 23) & 0.462 (df = 24) \\ 
+F Statistic &  & 79.021$^{***}$ (df = 3; 22) &  & 25.872$^{***}$ (df = 2; 23) & 678.588$^{***}$ (df = 2; 23) & 242.455$^{***}$ (df = 1; 24) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+
+\end{landscape}
+
+
+
+\cleardoublepage
+%\bibliographystyle{IEEEtran}
+\bibliographystyle{apacite}
+\bibliography{/Users/Admin/Desktop/workspace/textproject/mybib}
+
+%\begin{thebibliography}{99}
+
+%\bibitem{eaton-Porous-Glass-Support-Material-75}
+%Geoffrey West, Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies, Penguin Books, 2018.
+
+%\bibitem{zenko-RedTeam-15}
+%Micah Zenko, Red Team: How to succeed by thinking like the enemy, Basic Book, New York, 2015.
+
+%\bibitem{Lewis-Moneyball-03}
+%Michael Lewis, Moneyball: The Art of Winning an Unfair Game, Norton, New York, 2004. 
+
+%\bibitem{Kurzweil-Singularity-05}
+%Ray Kurzweil, The Singularity Is Near: When Humans Transcend Biology, Penguin Group, New York, 2005.
+
+%\bibitem{Ismail-Exponential-14}
+%Salim Ismail, Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours (and what to do about it), Diversion Books, New York, 2014.
+
+
+
+
+\end{document}
+
