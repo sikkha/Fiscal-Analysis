@@ -6,7 +6,7 @@ library("readxl")
 
 
 #setwd("~/Desktop/workspace/DA8410 Fiscal and Monetary Policy Analysis/DA8410 Part 2")
-setwd("~/Documents/GitHub/Public-Education-Policy-and-Spending/data")
+setwd("~/Documents/GitHub/Fiscal-Analysis/Public-Education-Policy-and-Spending/data")
 # xls files
 #my_data <- read_excel("DA.841,PA8603-DATA.xls")
 my_data <- read.csv("DA.841,PA8603-DATA_CSV.csv")
