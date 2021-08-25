@@ -105,4 +105,7 @@ stargazer(model1, model2_1, model3, model4, model5, model6, type="text")
 library(broom)
 tidy(model1)
 
+#mathmatical derived by equatiamatic
+library(equatiomatic)
+cat(extract_eq(model1))
 
